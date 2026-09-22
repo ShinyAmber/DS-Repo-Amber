@@ -2,7 +2,7 @@
 
 # BootcampRepo
 
-<div style="margin: 0; line-height: 60%; width=80%;">
+<div style="margin: 0; line-height: 20%; width:80%;">
     (hmmm... ciencia...)
     <p><sub>\/</sub></p>
 </div>
@@ -17,10 +17,10 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 
 ## Objetivos a cumplir
 - Aprender Data Science y no morir en el intento
-+ Proteger al mundo de la devastación
-+ Unir todos a todos los pueblos en una sola nación
-+ Vencer a nuestros enemigos con la verdad y el amor
-+ Extender nuestro poder mas allá del espacio exterior
+- Proteger al mundo de la devastación
+- Unir todos a todos los pueblos en una sola nación
+- Vencer a nuestros enemigos con la verdad y el amor
+- Extender nuestro poder mas allá del espacio exterior
 
 ## Progreso 
 
