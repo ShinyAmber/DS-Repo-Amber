@@ -19,7 +19,7 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 # Progreso 
 
 >[!NOTE]
->Este README lo iré actualizando lo máximo posible, pero 0 promesas.
+>Este README lo iré actualizando lo máximo posible, pero 0 promesas. :slightly_smiling_face:	
 
 <div align="center">
 
