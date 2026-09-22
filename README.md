@@ -2,10 +2,16 @@
 
 # BootcampRepo
 
+<sup>hmmm ciencia</sup>
+
+<img src="./img/WhatsApp Image 2026-09-19 at 01.26.38.jpeg" width="125" align="center" alt="Yixuan Interknot Network Profile Picture Zenless Zone Zero"> 
+<br><br>
 Repositorio oficial del Bootcamp de Data Science
 
 </div>
 
+>[!NOTE]
+> No se van a usar emojis antes de los nombres de las secciones, no creo que aporte nada.
 # Contenido
 En este repositorio estarán los ejercicios en base vayamos avanzando en el bootcamp de Data Science, de Septiembre de 2026 a Diciembre de 2026
 
