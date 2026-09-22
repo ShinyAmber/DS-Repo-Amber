@@ -1,8 +1,8 @@
 <div style="text-align: center;">
 
 # BootcampRepo
-![imagen](img/neon_github2.png)
-    <p>Repositorio oficial del Bootcamp de Data Science</p>
+
+Repositorio oficial del Bootcamp de Data Science
 
 </div>
 
@@ -16,9 +16,9 @@ En este repo estaran los ejercicios a base vayamos avanzando en el bootcamp de D
 - Extender nuestro poder mas allá del espacio exterior
 - Aprender Data Science y no morir en el intento
 
-<div style="align: center; text-align: center;">
+<div style="align: center; text-align: center">
 
-![gif_goldship](img/gold-ship-uma-musume.gif)
+
     
 ¡Gracias por ver!
 
