@@ -23,10 +23,12 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 
 <div align="center">
 
-    | **PRUEBA** |
-    |:----------:|
-    | Cosa       |
-    
+|    **Ejercicios**    |    **Donette**   | **Dia completado** |
+|:--------------------:|:----------------:|:------------------:|
+| Python Basic I       |:white_check_mark:|22-09-26            |
+| Python Basic II      |:white_check_mark:|22-09-26            |
+
+
 </div>
 
 <div align="center">
