@@ -2,12 +2,13 @@
 
 # BootcampRepo
 
-<div style="margin: 0; line-height: 20%; width:80%;">
+<div style="margin: 0; line-height: 50%; width:80%;">
     (hmmm... ciencia...)
     <p><sub>\/</sub></p>
 </div>
 <img src="./img/WhatsApp Image 2026-09-19 at 01.26.38.jpeg" width="125" align="center" alt="Yixuan Interknot Network Profile Picture Zenless Zone Zero" style="display:block; margin: 0;"> 
 <br><br>
+
 Repositorio oficial del Bootcamp de :sparkles: Data Science :sparkles:
 
 </div>
@@ -39,5 +40,5 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 ---
 
 <div align="center">
-¡Gracias por leer esto!
+¡Gracias por leer este README!
 </div>
