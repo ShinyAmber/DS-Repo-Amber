@@ -6,9 +6,9 @@
 <div style="margin: 0; line-height: 50%; width:80%;">
     (hmmm... ciencia...)
 </div>
-<br><br>
 
-Repositorio oficial del Bootcamp de :sparkles: Data Science :sparkles:
+
+### Repositorio oficial del Bootcamp de :sparkles: Data Science :sparkles:
 
 </div>
 
