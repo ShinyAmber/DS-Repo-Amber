@@ -29,10 +29,11 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 
 <div align="center">
 
-|    **Ejercicios**    |    **Donette**   | **Dia completado** |
-|:--------------------:|:----------------:|:------------------:|
-| Python Basics I      |:white_check_mark:|22-09-26            |
-| Python Basics II     |:white_check_mark:|22-09-26            |
+|      **Ejercicios**    |    **Donette**   | **Dia completado** |
+|:----------------------:|:----------------:|:------------------:|
+| Python Basics I        |:white_check_mark:|22-09-26            |
+| Python Basics II       |:white_check_mark:|22-09-26            |
+| Extra Python Basics 09 |:white_check_mark:|24-09-26            |
 
 </div>
 
