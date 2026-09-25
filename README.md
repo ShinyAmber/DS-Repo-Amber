@@ -4,7 +4,7 @@
 
 <img src="./img/WhatsApp Image 2026-09-19 at 01.26.38.jpeg" width="125" align="center" alt="Yixuan Interknot Network Profile Picture Zenless Zone Zero" style="display:block; margin: 0;"> 
 <div style="margin: 0; line-height: 50%; width:80%;">
-    (hmmm... ciencia...)
+    (hmmm... datos...)
 </div>
 
 
@@ -29,15 +29,14 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 
 <div align="center">
 
-|      **Ejercicios**    |    **Donette**   | **Dia completado** |
-|:----------------------:|:----------------:|:------------------:|
-| Python Basics I        |:white_check_mark:|22-09-26            |
-| Python Basics II       |:white_check_mark:|22-09-26            |
-| Extra Python Basics 09 |:white_check_mark:|24-09-26            |
-| Extra Python Basics 10 |:white_check_mark:|24-09-26            |
-| Extra Python Basics 11 |:white_check_mark:|24-09-26            |
-| Extra Python Basics 12 |:white_check_mark:|24-09-26            |
-| Practica Python 18     |:white_check_mark:|24-09-26            |
+|        **Ejercicios**       |    **Donette**   | **Dia completado** |
+|:---------------------------:|:----------------:|:------------------:|
+| Python Basics I y II        |:white_check_mark:|22-09-26            |
+| Extra Python Basics 09 a 18 |:white_check_mark:|24-09-26            |
+| Colecciones y Extra I       |:white_check_mark:|25-09-26            |
+| Flujos de control I y II    |:white_check_mark:|25-09-26            |
+
+
 
 </div>
 
