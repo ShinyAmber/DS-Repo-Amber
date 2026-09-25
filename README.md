@@ -35,7 +35,7 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 | Extra Python Basics 09 a 18 |:white_check_mark:|24-09-26            |
 | Colecciones y Extra I       |:white_check_mark:|25-09-26            |
 | Flujos de control I y II    |:white_check_mark:|25-09-26            |
-
+| Extra Biblioteca y while    |:white_check_mark:|25-09-26            |
 
 
 </div>
