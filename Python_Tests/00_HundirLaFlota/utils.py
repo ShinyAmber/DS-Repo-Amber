@@ -46,18 +46,23 @@ def disparar(casilla,tablero):
     else:
         tablero[indice_0, casilla[1]] = "A"
 
+import numpy as np 
+
 def crear_coordenadas(tamano):
     numeroX = np.random.randint(0,10)
     numeroY = np.random.randint(0,10)
 
     checking = True
     while checking == True:
-        if (numeroX == 9 or numeroY == 9):
+        # print(numeroX,numeroY)
+        if (numeroX > 8 or numeroY > 8):
             numeroX = np.random.randint(0,10)
             numeroY = np.random.randint(0,10)
         else:
             checking = False
-            return [numeroX, numeroY]
+            break
+
+    return [numeroX, numeroY]
 
 
 class Tablero():
@@ -77,68 +82,91 @@ class Tablero():
         self.matriz = np.full((tamano, tamano), "-")
 
     def colocar_barco(self, contador):
-        print("Contador =", contador)
+
+        # print("Contador =", contador)
         tablero = self.matriz.copy() # Aqui hacemos la copia del tablero para intentar colocar las casillas
 
-        if (contador > len(self.vidas_barcos) -1):
+        if (contador >= len(self.vidas_barcos)):
             return
         
-        sentido = np.random.randint(0,2)
-        # 0 = horizontal
-        # 1 = vertical
+        sentido = np.random.randint(0,4)
+        
+        # print("Sentido", sentido)
         numeros = crear_coordenadas(self.tamano)
+        print("Coordenada incial:",numeros)
+        # 0 = izquierda
+        # 1 = derecha
+        # 2 = arriba
+        # 3 = abajo
+        print("Eslora:", self.vidas_barcos[contador])
 
-        if (sentido == 1): # Vertical
-            bucle_creacion = True
-            while bucle_creacion == True:
-                if (tablero[numeros[0], numeros[1]] == "O" or (numeros[0] + self.vidas_barcos[contador]) > 9):
-                    crear_coordenadas(self.tamano)
-                    continue
+        generating = True
+        while generating == True:
+            print("Sentido:", sentido)
+            longitud = self.vidas_barcos[contador]
+            if (sentido < 2): # Horizontal
+                fil_inicial = max(0, numeros[0] - 1)
+                fil_final = min(self.tamano, numeros[0] + 2)
+
+                if(sentido == 0): # Izquierda -- ABSOLUTE VICOTORY: 14-10-26 12:41 
+                    
+                    if((numeros[1] < longitud) or np.any(tablero[fil_inicial:fil_final,
+                                                                max(0, (numeros[1] - (longitud) -1)):min(self.tamano,numeros[1] + 2)] != "-")):
+                        numeros = crear_coordenadas(self.tamano)
+                        continue
+                    else:
+                        tablero[numeros[0], max(0,numeros[1] - longitud):(numeros[1])] = "O"
+                        # (fila:ini;fila_fin;columna:ini;columna:fin;eslora,sentido)
+                        self.posiciones_barcos.append([[numeros[0],numeros[0]],[numeros[1],numeros[1] - longitud],self.vidas_barcos[contador], sentido]) 
+                        generating = False
+
+                else: # Derecha
+                    if ((numeros[1] + longitud > self.tamano) or np.any(tablero[fil_inicial:fil_final,
+                                                                     max(0, numeros[1] - 1):min(self.tamano, (numeros[1] +longitud) + 1)] != "-")):
+                        numeros = crear_coordenadas(self.tamano)
+                        continue
+                    else:
+                        tablero[numeros[0], numeros[1]: (numeros[1] + longitud)] = "O"
+                        self.posiciones_barcos.append([[numeros[0],numeros[0]],[numeros[1],numeros[1] + longitud], self.vidas_barcos[contador], sentido])
+                        generating = False
+
+            else:
+                col_inicial = max(0, numeros[1] - 1)
+                col_final = min(self.tamano, numeros[1] + 2)
+
+                if(sentido == 2): # Arriba
+                   if ((numeros[0] < longitud) or np.any(tablero[max(0, (numeros[0] - longitud) - 1):min(self.tamano, numeros[0] + 2),
+                                                                 col_inicial:col_final] != "-")):
+                       numeros = crear_coordenadas(self.tamano)
+                       continue
+                   else:
+                       tablero[(numeros[0] - longitud):(numeros[0]), numeros[1]] = "O"
+                       self.posiciones_barcos.append([[numeros[0],numeros[0] - longitud], [numeros[1], numeros[1]],self.vidas_barcos[contador], sentido])
+                       generating = False
                 else:
-                    for i in range(0, self.vidas_barcos[contador]):
-                        if (tablero[numeros[0] + i, numeros[1]] == "O" or (numeros[0] + i) > 9):
-                            crear_coordenadas(self.tamano)
-                            continue
-                        else:
-                            tablero[numeros[0] + i, numeros[1]] = "O"
-                            bucle_creacion = False
-                            break
+                    if (numeros[0] + longitud > self.tamano) or np.any(tablero[max(0, numeros[0] - 1):min(self.tamano, numeros[0] + longitud) +2,
+                                                                               col_inicial:col_final] != "-"):
+                        numeros = crear_coordenadas(self.tamano)
+                        continue
+                    else:
+                        tablero[numeros[0]:(numeros[0] + longitud), numeros[1]] = "O"
+                        self.posiciones_barcos.append([[numeros[0], numeros[0]], [numeros[1], numeros[1] + longitud], self.vidas_barcos[contador], sentido])
+                        generating = False
 
-            print("Representacion: ")
-            print(tablero)
-            contador += 1
-            self.colocar_barco(contador)
-
-        else:
-            bucle_creacion = True
-            while bucle_creacion == True:
-                if (tablero[numeros[0], numeros[1]] == "O" or (numeros[1] + self.vidas_barcos[contador]) > 9):
-                    crear_coordenadas(self.tamano)
-                    continue
-                else:
-                    for i in range(0, self.vidas_barcos[contador]):
-                        if (tablero[numeros[0], numeros[1] + i] == "O" or (numeros[1] + i) > 9):
-                            crear_coordenadas(self.tamano)
-                            continue
-                        else:
-                            tablero[numeros[0], numeros[1] + i] = "O"
-                            bucle_creacion = False
-                            break
-            
-
-            print("Representacion: ")
-            print(tablero)
-            contador += 1
-            self.colocar_barco(contador)
+                
+        
+        print("Representacion: ")
+        print(tablero)
+        contador += 1
+        self.matriz = tablero
+        self.colocar_barco(contador)
 
     def comprobar_puntuacion(self):
         if self.puntuacion_actual < 15:
             return 1
         else:
             return 0
-        
-            
-
+           
     def disparar(self,casilla):
         letras = "ABCDEFGHIJ"
         indice_0 = letras.index(casilla[0])
