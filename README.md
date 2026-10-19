@@ -22,22 +22,6 @@ En este repositorio estarán los ejercicios en base vayamos avanzando en el boot
 - Vencer a nuestros enemigos con la verdad y el amor
 - Extender nuestro poder mas allá del espacio exterior
 
-## Progreso 
-
->[!NOTE]
->Este README lo iré actualizando lo máximo posible, pero 0 promesas. :slightly_smiling_face:	
-
-<div align="center">
-
-|        **Ejercicios**       |    **Donette**   | **Dia completado** |
-|:---------------------------:|:----------------:|:------------------:|
-| Python Basics I y II        |:white_check_mark:|22-09-26            |
-| Extra Python Basics 09 a 18 |:white_check_mark:|24-09-26            |
-| Colecciones y Extra I       |:white_check_mark:|25-09-26            |
-| Flujos de control I y II    |:white_check_mark:|25-09-26            |
-| Extra Biblioteca y while    |:white_check_mark:|25-09-26            |
-
-
 </div>
 
 ---
