@@ -1,1 +1,6 @@
 .venv
+.env
+
+# DATASETS
+steam_games.csv
+
