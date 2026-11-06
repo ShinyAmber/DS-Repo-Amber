@@ -6,6 +6,9 @@
 	],
 	"settings": {
 		"python-envs.defaultEnvManager": "ms-python.python:system",
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"workbench.editorAssociations": {
+			"file:/**/*.csv": "jupyter-data-wrangler"
+		}
 	}
 }
