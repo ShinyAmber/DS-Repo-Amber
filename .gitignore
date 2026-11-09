@@ -4,3 +4,5 @@
 # DATASETS
 steam_games.csv
 
+.vscode
+**/.sync-conflict-*
