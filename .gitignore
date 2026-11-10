@@ -6,3 +6,5 @@ steam_games.csv
 
 .vscode
 **/.sync-conflict-*
+**/.DS_Store
+**/.vscode
