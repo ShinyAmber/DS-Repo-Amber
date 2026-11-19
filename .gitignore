@@ -8,3 +8,5 @@ steam_games.csv
 **/.sync-conflict-*
 **/.DS_Store
 **/.vscode
+
+.storyformats
